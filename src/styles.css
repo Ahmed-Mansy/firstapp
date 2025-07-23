@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    /* font-family: "Staatliches", sans-serif; */
+    font-size: 1rem;
+}
+
+.active-link {
+    background-color: #1abc9c;
+}
+
+.line{
+    height: 4px;
+    width: 80px;
+    background-color: #fff;
+}

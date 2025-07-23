@@ -1,0 +1,30 @@
+.contact {
+    color: rgb(44, 62, 80);
+}
+
+.contact .line {
+    background-color: rgb(44, 62, 80);
+}
+
+input.form-control:focus {
+    box-shadow: none;
+}
+
+label {
+    color: #1abc9c;
+    margin-bottom: 7px;
+    transition: .6s top;
+    top: 40px;
+    opacity: 0;
+}
+
+input:focus label{
+     top: 40px !important;
+     opacity: 1;
+}
+button{
+    background-color: #1abc9c;
+}
+button:hover{
+    background-color: #1abc9c;
+}

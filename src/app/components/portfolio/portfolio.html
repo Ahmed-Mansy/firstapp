@@ -1,0 +1,45 @@
+<section class="portfolio d-flex justify-content-center align-items-center text-white vh-100">
+    <div class="text-center">
+        <div class="text-center pt-4 port-details">
+            <h2 class="text-uppercase mb-3 fs-1 fw-bolder">portfolio component</h2>
+            <div class="d-flex align-items-center justify-content-center mb-3">
+                <div class="line me-3"></div>
+                <i class="fa-solid fa-star"></i>
+                <div class="line ms-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row g-5">
+
+                @for (item of portfolioDetails; track $index) {
+                <div class="col-lg-4 col-md-6">
+                    <div (click)="showData(item)" class="image rounded-3 overflow-hidden position-relative"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img [src]="item" class="w-100" alt="">
+                        <div
+                            class="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center ">
+                            <i class="text-white fa-solid fa-plus fa-6x"></i>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="bg d-flex justify-content-center align-items-center vh-100">
+        <div class="modal-dialog ">
+        <div class="modal-body">
+            <div class="">
+                <img [src]="itemsShow" class="w-100" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
